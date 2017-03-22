@@ -20,10 +20,12 @@ You can use this in your terraform template with the following steps.
 module "efs" {
     source = "github.com/misdepartment/tf_aws_efs"
     
+    subnet_id = "${var.subnet_id}"
 }
 ```
 
 Authors
 =======
 
-Created and maintained by `thepastelsuit`
+Created by `jdotpz`  
+Maintained by `thepastelsuit`
